@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* 전체 배경색 */
+body {
+	background-color:	white;
+}
+a {
+	font-size:16px
+}
+p {
+	text-align:	center;
+	margin-bottom:	1s0px;
+}
+
+textarea {
+	width:	700px;
+	padding:	10px	2px;
+	resize:	none;
+	margin:	0px;
+}
+
+#board_head h1 {
+	border-bottom:	2px	solid	#09C;
+	padding-bottom:	20px;
+	margin-bottom:	20px;
+}
+
+/*head_area->head_head
+/* 게시판 설명 텍스트 스타일 */
+#board_head h4 {
+	font-size:	16px;
+	margin-bottom:	10px;
+}
+
+/* 게시판 글쓰기 버튼 스타일 */
+#write_btn button {
+	/*	text-align:	right;	*/
+	width:	100px;
+	padding:	10px;
+	font-size:	16px;
+	margin:	10px	0	20px	0;
+}
+/*  */
+#write_btn {
+	text-align:	right;
+	height:	10px;
+}
+
+/* 게시판 페이징 영역 스타일 */
+#page_num {
+	padding:	20px	0;
+	border-top:	1px	solid	#ddd;
+}
+
+/* 게시판 내부 간격 조정 */
+#board_head {
+	padding:	10px;
+	background-color:	#fff;
+}
+
+/* 게시판 수정 영역 */
+#board_edit {
+	width:	90%;
+	border-radius:	10px;
+	box-shadow:	0	0	10px	rgba(0,	0,	0,	0.1);
+}
+
+#board_edit h1 a, #board_edit h4 {
+	text-align:	center;
+	margin-bottom:	1px;
+}
+
+#edit_area {
+	padding:	1px;
+}
+
+#in_title, #in_name, #in_content {
+	margin-bottom:	1px;
+}
+
+/* 게시판 읽기 영역 */
+#board_read {
+	width:	700px;
+	margin:	50px	auto;
+	padding:	20px;
+	border:	1px	solid	white;
+	border-radius:	10px;
+	background-color:	white;
+}
+
+#board_read h2 {
+	font-size:	28px;
+	color:	#333;
+	margin-bottom:	20px;
+}
+
+#user_info {
+	font-size:	16px;
+	color:	#777;
+	margin-bottom:	20px;
+}
+
+#bo_line {
+	border-top:	1px	solid	#ddd;
+	margin:	20px	0;
+}
+
+#bo_content {
+	font-size:	16px;
+	color:	#555;
+	line-height:	1.6;
+}
+
+#bo_ser {
+	margin-top:	20px;
+	text-align:	right;
+}
+
+#bo_ser ul {
+	display:	inline-block;
+}
+
+#bo_ser ul li {
+	display:	inline-block;
+	margin-left:	20px;
+}
+
+#bo_ser ul li a {
+	color:	#555;
+	padding:	5px	10px;
+	border:	1px	solid	#ddd;
+	border-radius:	5px;
+	background-color:	#f5f5f5;
+	transition:	background-color	0.3s;
+}
+
+#bo_ser ul li a:hover {
+	background-color:	#e5e5e5;
+}
+
+/*게시판 쓰기*/
+#board_write {
+	width:	700px;
+	margin:	70px	auto;
+	background-color:	#fff;
+	padding:	20px;
+	border-radius:	10px;
+	box-shadow:	0	0	10px	rgba(0,	0,	0,	0.1);
+}
+
+#page_num {
+	width:	100%;
+	text-align:	center;
+	margin-top:	20px;
+	margin-bottom:	20px;
+}
+
+#board_edit {
+	width:	80%;
+	margin:	54px	auto;
+	background-color:	blue;
+	padding:	20px;
+	border-radius:	10px;
+	box-shadow:	0	0	10px	rgba(0,	0,	0,	0.1);
+}
+
+#page_num ul {
+	padding:	0;
+}
+
+#page_num ul li {
+	display:	inline-block;
+	margin:	0	5px;
+	padding:	5px	10px;
+	text-align:	center;
+	border:	1px	solid	#ddd;
+	background-color:	#f5f5f5;
+	color:	#555;
+	cursor:	pointer;
+	transition:	background-color	0.3s;
+}
+
+#page_num ul li a {
+	color:	#555;
+	transition:	color	0.3s;
+}
+
+#page_num ul li.fo_re,
+#page_num ul li:hover {
+	background-color:	#09C;
+	color:	#fff;
+}
+
+/* 게시판 상단 영역 스타일 */
+#board_head h1 {
+	border-bottom:	2px	solid	#09C;
+	padding-bottom:	5px;
+	margin-bottom:	20px;
+}
+
+#search_box {
+	margin:	20px	0;
+	text-align:	center;
+	padding:	10px;
+	border-radius:	5px;
+}
+
+#search_box input[type="text"] {
+	padding:	10px;
+	width:	70%;
+	border-radius:	4px;
+	font-size:	16px;
+	outline:	none;
+	transition:	border-color	0.3s;
+}
+
+#search_box input[type="text"]:focus {
+	border-color:	#09C;
+}
+.search-wrapper {
+	display:	flex;
+	border:	1px	;
+	overflow:	hidden;
+}
+
+.search-wrapper input {
+	flex-grow:	1;
+	border:	1px	solid	black;
+	padding:	5px	10px;
+}
+
+.search-wrapper button {
+	border:	none;
+	background-color:	#4CAF50;
+	color:	white;
+	padding:	5px	15px;
+	cursor:	pointer;
+}
+
+.search-wrapper button:hover {
+	background-color:	#45a049;
+}
+
+
+.bt_se {
+	text-align:	left;
+}
+
+.bt_se button {	
+	background-color:	green;
+	color:	#fff;
+	border:	none;
+	border-radius:	5px;
+	cursor:	pointer;
+	transition:	background-color	0.3s;
+}
+
+.bt_se button:hover {
+	background-color:	#007AB7;
+}
+
+
+/* 게시판 테이블 스타일 */
+.list-table {
+	border-top:	2px	solid	#09C;
+	width	:100%;
+}
+
+/* 게시판 테이블 헤더 스타일 */
+.list-table thead th {
+	height:	5px;
+	font-weight:	bold;
+	font-size:	16px;
+	padding:	10px	10px;
+}
+
+/* 게시판 테이블 본문 스타일 */
+.list-table tbody tr:hover {
+	background-color:	#f5f5f5;
+}
